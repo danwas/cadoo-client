@@ -2,7 +2,6 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  // "proxy": "http://ec2-52-15-167-238.us-east-2.compute.amazonaws.com/",
   "proxy": "http://localhost:8000/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
