@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:8000/",
+  "proxy": "http://ec2-52-15-167-238.us-east-2.compute.amazonaws.com/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -21,11 +21,10 @@
     "uuid": "^8.3.1"
   },
   "scripts": {
-    "start": "node src/index.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "npm start build"
   },
   "eslintConfig": {
     "extends": "react-app"
