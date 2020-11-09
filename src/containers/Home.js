@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useContext } from "react";
 import { useLocation, useHistory } from "react-router-dom";
+import { Carousel } from 'react-bootstrap';
 
 import CurrentRooms from './CurrentRooms';
 import PlannedRooms from './PlannedRooms';
@@ -7,7 +8,7 @@ import Misc from './Misc';
 
 import "../css/Home.css"; 
 
-
+const pages = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10']
 
 function Home() {
     const socketRef = useRef();
@@ -23,14 +24,18 @@ function Home() {
     return (
         <div className="Home">
             <div class='column-left'>
+            
+            </div>           
+            <div class='column-right'>
+            <div className="topDiv">
             <Carousel>
-                {rooms.map(room => (
+                {pages.map(page => (
                         <Carousel.Item>
                             <div class='center'>
                             
                             <img
-                            src= {require()}
-                            class= 'centerimg'
+                            src= {require(`../DEL_STANDARD/DEL_STANDARD_0${page}.png`)}
+                            class='centerimg'
                             />                            
         
                             </div>
@@ -38,10 +43,6 @@ function Home() {
                         </Carousel.Item>
                 ))} 
             </Carousel>
-            </div>           
-            <div class='column-right'>
-            <div className="topDiv">
-                <CurrentRooms />
             </div>
             <br></br>
             <div className="bottomDiv">

@@ -47,11 +47,11 @@
 
   .Home .centerimg{
     object-fit: cover;
-    width: 500px;
-    height: 300px;
+    width: 750px;
+    height: 100%;
     text-align: left;
-    filter: brightness(50%);
   }
+
 .Home .planned {
     width: 20%;
     justify-content: left;
