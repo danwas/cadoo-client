@@ -8,6 +8,7 @@ import Misc from './Misc';
 import "../css/Home.css"; 
 
 
+
 function Home() {
     const socketRef = useRef();
     const location = useLocation();
@@ -22,7 +23,21 @@ function Home() {
     return (
         <div className="Home">
             <div class='column-left'>
-                <Misc />
+            <Carousel>
+                {rooms.map(room => (
+                        <Carousel.Item>
+                            <div class='center'>
+                            
+                            <img
+                            src= {require()}
+                            class= 'centerimg'
+                            />                            
+        
+                            </div>
+                            
+                        </Carousel.Item>
+                ))} 
+            </Carousel>
             </div>           
             <div class='column-right'>
             <div className="topDiv">
