@@ -163,6 +163,15 @@
   font-weight: 400;
 }
 
+.column-left .list-group .item2 {
+  background-color: rgb(44, 44, 44);
+  color: rgb(255, 127, 80);
+  margin-top: 3px;
+  border-color: #494949;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .column-left .list-group .category-group {
   margin-top: 5px;
   padding-left: 5%;

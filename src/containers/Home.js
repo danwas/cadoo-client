@@ -8,7 +8,7 @@ import Misc from './Misc';
 
 import "../css/Home.css"; 
 
-const pages = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10']
+const pages = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38']
 
 function Home() {
     const socketRef = useRef();
@@ -24,7 +24,7 @@ function Home() {
     return (
         <div className="Home">
             <div class='column-left'>
-            
+            <Misc />
             </div>           
             <div class='column-right'>
             <div className="topDiv">
@@ -43,10 +43,6 @@ function Home() {
                         </Carousel.Item>
                 ))} 
             </Carousel>
-            </div>
-            <br></br>
-            <div className="bottomDiv">
-                <PlannedRooms />
             </div>
             </div>
         </div>
